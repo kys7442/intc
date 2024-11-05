@@ -1,0 +1,41 @@
+footer { background-color: #1d2022; color: #fff; font-size: 15px; padding: 50px 0}
+footer .f_container a {font-size: 15px; color: #fff;}
+footer .f_container .hov:hover {text-decoration: underline; color: #7f9dad;}
+footer .f_container .logo {width: 165px;}
+footer .f_container .txt_wrap {width: calc(100% - 165px);}
+footer .f_container .txt_wrap .privacy {position: relative;}
+footer .f_container .txt_wrap .info {margin-top: 25px; width: 65%; flex-wrap: wrap; row-gap: 10px;}
+footer .f_container .txt_wrap .info p {padding: 0 10px 0 5px; position: relative; opacity: .5; word-break: keep-all; white-space: wrap;}
+footer .f_container .txt_wrap .info p::after {content: '/'; font-size: 15px; font-weight: 300; position: absolute; right: 0; top: 50%; transform: translateY(-50%); opacity: .5;}
+footer .f_container .txt_wrap .info p:nth-child(3n)::after {display: none;}
+footer .f_container .txt_wrap .info p:first-child, footer .f_container .txt_wrap .info p:nth-child(4) {padding-left: 0;}
+footer .f_container .txt_wrap .copyright {margin-top: 15px; opacity: .3;}
+
+footer .plus_box {position: absolute; right: 0; top: 42%; transform: translateY(-50%); text-align: center;}
+footer .plus_box h4 {font-size: 18px; font-weight: 500;  color: #fff; opacity: .8;}
+footer .plus_box strong {font-size: 24px; font-weight: 700; color: #fff; opacity: 1; padding: 14px 0 7px; display: block;}
+footer .plus_box p {font-size: 16px; font-weight: 400; color: #fff; opacity: .6; line-height: 1.4;}
+footer .plus_box p span {font-size: 15px;}
+
+
+
+@media (max-width: 767px) {
+	footer .f_container {flex-direction: column; gap: 40px;}
+	footer .f_container .logo, footer .f_container .txt_wrap {width: 100%;}
+	footer .f_container .txt_wrap .info {width: 90%; row-gap: 8px; margin-top: 15px;}
+
+	footer .plus_box {position: relative; transform: none; top: 0; text-align: left; left: 0; right: auto; padding-top: 30px; margin-top: 30px; border-top: 1px solid rgba(255,255,255, .3);}
+	footer .plus_box h4 {font-size: 17px;}
+	footer .plus_box strong {font-size: 22px;}
+	footer .plus_box p {font-size: 15px;}
+	footer .plus_box p span {font-size: 14px;}
+}
+
+@media (max-width: 480px) {
+	footer {font-size: 14px;}
+	footer .f_container .txt_wrap .info p {padding-left: 0; width: 100%; line-height: 1.2;}
+	footer .f_container .txt_wrap .info p::after {display: none;}
+}
+
+
+

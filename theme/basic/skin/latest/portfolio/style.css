@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+/* .full_container{overflow:hidden} */
+.full_container .inner_container{max-width:1200px; width:100%; margin:0 auto}
+
+/* 새글 스킨 (latest) */
+.main_portfolio{position:relative}
+.main_portfolio:after{content:''; display: none; width:20%; height:100%; position:absolute; right:0; top:0;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+/**
+ *  Progress Bar
+ */
+
+.main_portfolio .progress_bar_wrap{position:absolute; bottom:100px; width:100%}
+
+.main_portfolio .progress_bar_wrap .progress {
+  display: block;
+  width: 100%;
+  height: 2px;
+  overflow: hidden;
+  
+  background-color: #ddd;
+  background-image: linear-gradient(to right, #e3c17f, #e3c17f);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  
+  transition: background-size .4s ease-in-out;
+}
+
+
+/**
+ *  Demo Styles from the Slick Slider
+ *  website
+ */
+
+.main_portfolio .content {width: calc(100% - 300px);}
+
+
+/* .image {
+  margin: 0 15px;
+} */
+
+.image a{outline:none}
+
+.main_portfolio .content .image .img_holder{position:relative; overflow:hidden}
+.main_portfolio .content .image .img_holder .blue_bg{position:absolute; width:100%; height:100%; left:0; top:0; display:flex; align-items:center; justify-content:center; background:#e3c17f; opacity:0; transition:.2s ease-in-out; cursor:pointer}
+.main_portfolio .content .image .img_holder:hover .blue_bg{opacity:1}
+.main_portfolio .content .image .img_holder > img {display: block; width: 100%}
+.main_portfolio .content .image .slider_txt{margin-top:25px; position:relative}
+.main_portfolio .content .image .slider_txt h3{font-size:20px; color:#222; font-weight:800; letter-spacing:-1px; width:79%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.main_portfolio .content .image .slider_txt div{font-size:16px; color:#999; letter-spacing:-1px; padding-top:10px;
+overflow: hidden;
+text-overflow: ellipsis;
+word-wrap: break-word;
+display: -webkit-box;
+-webkit-line-clamp: 2; /* ellipsis line */
+-webkit-box-orient: vertical; 
+line-height:1.4em;
+height:3.6em;
+}
+.main_portfolio .content .image .slider_txt span{font-size:15px; color:#999; font-weight:600; position:absolute; right:0; top:5px; letter-spacing:-1px}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.main_portfolio .main_portfolio_txt{padding-top:100px}
+.main_portfolio .main_portfolio_txt > div{position:relative}
+.main_portfolio .main_portfolio_txt > div .txt_inner{position:absolute; top:0}
+.main_portfolio .main_portfolio_txt > div .txt_inner h2{font-size:55px; font-weight:900; letter-spacing:-2px; line-height:0.8em; padding:55px 10px 10px;  background: linear-gradient(180deg,rgba(255,255,255,0) 90%, #f1e0bf 50%);}
+.main_portfolio .main_portfolio_txt > div .txt_inner h2 span{font-size:23px; color:#bbb; display:block; font-weight:800}
+.main_portfolio .main_portfolio_txt > div .txt_inner p{font-size:18px; color:#444; font-weight:700; letter-spacing:-1px; padding-top:90px}
+.main_portfolio .main_portfolio_txt > div .txt_inner p span{vertical-align:top; cursor:pointer}
+
+
+
+
+.pic_lt {position:relative;}
+.pic_lt .lat_title {display:block;line-height:45px;font-size:1.2em;color:#253dbe}
+.pic_lt .lat_title a {color:#000;display:inline-block;position:relative}
+.pic_lt .lt_more {position:absolute;top:11px;right:10px;display:block;width:25px;line-height:25px;color:#aaa;border-radius:3px;text-align:center;}
+.pic_lt .lt_more:hover {color:#777}
+.pic_lt ul:after {display:block;visibility:hidden;clear:both;content:""}
+.pic_lt ul {margin: 0 -10px}
+.pic_lt li {float:left;width:22.75%;margin-right:3%}
+.pic_lt li:nth-child(4n) {margin-right:0}
+.pic_lt li.galley_li:nth-child(4n+1) {clear: both!important}
+.pic_lt li .lt_img {display:block}
+.pic_lt li .lt_img img, .pic_lt li .lt_img video{width:100%;height:auto}
+.pic_lt li .fa-heart {color:#ff0000}
+.pic_lt li .fa-lock {display:inline-block;line-height:14px;width:16px;font-size:0.833em;color:#4f818c;background:#cbe3e8;text-align:center;border-radius:2px;font-size:12px;border:1px solid #cbe3e8;vertical-align:middle}
+.pic_lt li .new_icon {display:inline-block;width:16px;line-height:16px;font-size:0.833em;color:#23db79;background:#b9ffda;text-align:center;border-radius:2px;margin-left:2px;font-weight:bold;vertical-align:middle}
+.pic_lt li .hot_icon {display:inline-block;width:16px;line-height:16px;font-size:0.833em;color:#ff0000;background:#ffb9b9;text-align:center;border-radius:2px;vertical-align:middle}
+.pic_lt li .fa-caret-right {color:#bbb}
+.pic_lt li .fa-download {display:inline-block;width:16px;line-height:16px;font-size:0.833em;color:#daae37;background:#ffefb9;text-align:center;border-radius:2px;vertical-align:middle}
+.pic_lt li .fa-link {display:inline-block;width:16px;line-height:16px;font-size:0.833em;color:#b451fd;background:#edd3fd;text-align:center;border-radius:2px;vertical-align:middle}
+.pic_lt .profile_img img{border-radius:50%}
+.lt_info {padding:10px 0}
+.lt_info .lt_nick {}
+.lt_info .lt_date {color:#888}
+.pic_lt .empty_li {line-height:145px ;color:#666;text-align:center;padding:0}
+.pic_lt .empty_li:before {background:none;padding:0}
+.pic_lt .lt_cmt {background:#e9eff5;color:#3a8afd;font-size:11px;height:16px;line-height:16px;padding:0 5px;border-radius:3px;vertical-align:middle}
+.pic_lt .lt_more {position:absolute;top:11px;right:0;display:block;width:40px;line-height:25px;color:#3a8afd;border-radius:3px;text-align:center}
+.pic_lt .lt_more:hover {color:#777}
+
+.latest_pic_slide .galley_li {margin: 20px;}
+.latest_pic_slide .galley_li .cont .title {font-size: 18px;   line-height: 1.2em;  font-weight: bold;  padding: 10px 0;  display: block;}
+
+/*****미디어쿼리*****/
+
+/*pc*/
+@media screen and (min-width: 1920px) {
+	/*main*/
+/* 	.main_portfolio{height:calc(100vh - 530px)} */
+}
+
+@media screen and (max-width: 1920px) {
+	/*main*/
+	.main_portfolio{height:660px}
+	.main_portfolio .content{width:90%; padding-left:14%; left:22.5%;}
+}
+
+@media screen and (max-width: 1600px) {
+	/*main*/
+	.main_portfolio{height:620px}
+}
+
+@media screen and (max-width: 1440px) {
+	/*main*/
+	.main_portfolio{height:575px}
+	.image{margin:0 8px}
+	.main_portfolio .content .image .slider_txt h3{font-size:17px}
+	.main_portfolio .content .image .slider_txt span{font-size:13px}
+	.main_portfolio .content .image .slider_txt div{font-size:14px}
+
+	.main_portfolio .main_portfolio_txt > div .txt_inner h2{font-size:45px; padding:35px 10px 7px; background:linear-gradient(180deg,rgba(255,255,255,0) 89%, #f1e0bf 50%)}
+	.main_portfolio .main_portfolio_txt > div .txt_inner h2 span{font-size:18px}
+}
+
+@media screen and (max-width: 1280px) {
+	/*main*/
+	.main_portfolio{height:545px}
+
+	.section_product.metal > div:before{height:76%}
+	.main_portfolio .content .image .slider_txt h3{font-size:16px}
+}
+
+@media screen and (max-width: 1024px) {
+	/*main*/
+	.main_portfolio{height:495px}
+	.main_portfolio .content .image .slider_txt h3{font-size:15px}
+	.main_portfolio .content .image .slider_txt span{font-size:11px}
+}
+
+
+@media screen and (max-width: 980px) {
+	/*main*/
+	.main_portfolio{height:525px}
+	.main_portfolio .content{padding-top:70px; width:100%; padding-left:6%; left:19%}
+	.main_portfolio .progress_bar_wrap{bottom:70px}
+	.main_portfolio .main_portfolio_txt{padding-top:70px}
+	.main_portfolio .main_portfolio_txt > div .txt_inner{top:20px}
+	.main_portfolio .main_portfolio_txt > div .txt_inner h2{font-size:35px; padding:0 4px 6px; background:linear-gradient(180deg,rgba(255,255,255,0) 84%, #f1e0bf 50%)}
+	.main_portfolio .main_portfolio_txt > div .txt_inner h2 span{font-size:16px}
+	.main_portfolio .main_portfolio_txt > div .txt_inner p{font-size:16px}
+}
+
+@media screen and (max-width: 810px) {
+	/*main*/
+	.main_portfolio{height:475px}
+	.main_portfolio .main_portfolio_txt > div .txt_inner h2{font-size:28px; padding:0 4px 3px}
+	.main_portfolio .main_portfolio_txt > div .txt_inner h2 span{font-size:14px}
+}
+
+@media screen and (max-width: 767px) {
+	.main_portfolio{height:705px}
+	.main_portfolio .main_portfolio_txt > div .txt_inner{position:static; top:0}
+	.main_portfolio .main_portfolio_txt > div .txt_inner h2{display:inline-block}
+	.main_portfolio .main_portfolio_txt > div .txt_inner p{padding-top:40px}
+	.main_portfolio .content{padding-top:220px; padding-left:0; left:10%}
+}	
+
+@media screen and (max-width: 640px) {
+	/*main*/
+	.main_portfolio{height:655px}
+}
+
+/*mobile*/
+@media screen and (max-width: 480px) {
+	.main_portfolio{height:605px}
+	.main_portfolio:after{width:10%}
+	.main_portfolio .main_portfolio_txt{padding-top:50px}
+	.main_portfolio .main_portfolio_txt > div .txt_inner p{font-size:14px; padding-top:30px}
+	.main_portfolio .content{padding-top:180px}
+	.main_portfolio .progress_bar_wrap{bottom:50px}
+}
+
+@media screen and (max-width: 360px) {
+	/*main*/
+	.main_portfolio{height:545px}
+}
+
+@media screen and (max-width: 320px) {
+	/*main*/
+	.main_portfolio{height:515px}
+	.main_portfolio .content .image .slider_txt h3{font-size:13px}
+	.main_portfolio .content .image .slider_txt span{top:3px}
+	.main_portfolio .content .image .slider_txt div{font-size:13px}
+}
